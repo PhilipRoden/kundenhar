@@ -1,0 +1,34 @@
+#wrapper {
+    display: grid;
+    height: calc(100vh);
+    grid-template-rows: 10% 10% 50% 1fr;
+    grid-template-areas:
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'mi mi mi mi'
+    'ft ft ft ft'
+}
+body{
+    background-color: #e74c3c;
+    margin: 0px;
+}
+header{
+    grid-area: hd;
+    background-color: rebeccapurple;
+}
+nav{
+    grid-area: nv;
+    background-color: green;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+}
+footer{
+    grid-area: ft;
+    background-color: brown;
+}
+.navbox{
+    width: 8px;
+    height: 16px;
+    background-color: black;
+}
