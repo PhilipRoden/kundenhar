@@ -33,8 +33,15 @@ footer{
     grid-area: ft;
     background-color: brown;
 }
-.navbox{
-    width: 8px;
-    height: 16px;
-    background-color: black;
+.button{
+    display: grid;
+    place-items: center;
+    background-color: aliceblue;
+    height:  50px;
+    width: 50px;
+    border-radius: 10px;
+}
+img{
+    border-radius: 10px;
+    width: 500px;
 }
