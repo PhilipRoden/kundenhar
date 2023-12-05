@@ -8,6 +8,10 @@
     'mi mi mi mi'
     'ft ft ft ft'
 }
+.title{
+    display: flex;
+    justify-content: center;
+}
 body{
     background-color: #e74c3c;
     margin: 0px;
@@ -15,6 +19,8 @@ body{
 header{
     grid-area: hd;
     background-color: rebeccapurple;
+    color: #e74c3c;
+    text-shadow: 2px 2px 1px grey;
 }
 nav{
     grid-area: nv;
