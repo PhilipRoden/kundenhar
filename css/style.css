@@ -1,4 +1,4 @@
-#wrapper {
+#wrapper1 {
     display: grid;
     height: calc(100vh);
     grid-template-rows: 10% 10% 50% 1fr;
@@ -8,30 +8,45 @@
     'mi mi mi mi'
     'ft ft ft ft'
 }
+
+#wrapper2 {
+    display: grid;
+    height: calc(100vh);
+    grid-template-rows: 60.33px 60.33px calc(60.33*2px) calc(60.33*3px) calc(60.33*6px);
+    grid-column: 70% 1fr;
+    grid-template-areas:
+    'hd'
+    'nv'
+    'sc1'
+    'scim1'
+    'mat'
+    'ft'
+}
+
 .title{
     display: flex;
     justify-content: center;
 }
 body{
-    background-color: #e74c3c;
+    background-color: #3C87E8;
     margin: 0px;
 }
 header{
     grid-area: hd;
-    background-color: rebeccapurple;
+    background-color: #935D57;
     color: #e74c3c;
     text-shadow: 2px 2px 1px grey;
 }
 nav{
     grid-area: nv;
-    background-color: green;
+    background-color: #4F5A69;
     display: flex;
     align-items: center;    
     justify-content: space-around;
 }
 footer{
     grid-area: ft;
-    background-color: brown;
+    background-color: #567AA8;
 }
 .button{
     display: grid;
@@ -44,4 +59,30 @@ footer{
 img{
     border-radius: 10px;
     width: 500px;
+}
+
+
+
+#sc1{
+    grid-area: sc1;
+}
+#scim1{
+    grid-area: scim1;
+}
+#article_container{
+    grid-area: mat;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.mat{
+    display: flex;
+    height: 100%;
+    
+}
+.mat .text{
+    width: 70%;
+}
+.mat .bild{
+    width: 30%;
 }
